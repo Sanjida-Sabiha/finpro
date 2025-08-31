@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* custom font setup */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Regular.ttf') format('OpenType');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-Medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/assets/fonts/Gilroy-SemiBold.ttf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+} 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Bold.ttf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  } 
+
+/* CountUp */
+
+@property --num-transactions {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num-assets {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num-users {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes counter {
+  from {
+    --num-transactions: 0;
+    --num-assets: 0;
+    --num-users: 0;
+  }
+  to {
+    --num-transactions: 97;
+    --num-assets: 100;
+    --num-users: 1;
+  }
+}

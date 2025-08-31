@@ -1,0 +1,97 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}"],
+  theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1024px",
+        xl: "1170px",
+      },
+    },
+    extend: {
+      fontFamily: {
+        "Gilroy": ["Gilroy", "sans-serif"],
+        "urbanist":["Urbanist", "sans-serif"]
+      },
+      spacing:{
+        '315':'315px',
+        '350':'350px',
+        '370':'370px',
+        '398':'398px',
+        '413':'413px',
+        '450':'450px',
+        '470':'470px',
+        '570':'570px',
+        '513':'513px',
+        '530':'530px',
+        '620': '620px',
+        '770':'770px',
+        '870':'870px',
+        '970':'970px',
+        '1224': '1224px',
+        '1440':'1440px'
+      },
+      fontSize: {
+        "3xl": "24px",
+        "3.5xl": "26px",
+        "28xl":"28px",
+        "4xl": "30px",
+        "4.2xl":'34px',
+        "4.5xl":'40px',
+        '5xl':'50px',
+        "7xl": "60px",
+        '7.5xl':"70px",
+        "8xl": "80px",
+      },
+      lineHeight: {
+        '8': '30px',
+        '18': '70px',
+        '10': '34px',
+        '11': '36px',
+        '12':'40px',
+        '44':'44px',
+        '13':'50px',
+        '19':'60px',
+        '21':'80px',
+        '20':'90px',
+      },
+      colors: {
+        primaryColor:'#0A0D14',
+        secondaryColor:'#494B4F',
+        bg:'#1A1F2D',
+        hoverBg:'#6DDB5B',
+        border:'#41CA2B',
+        borderBg:'#EFFFEC',
+        divided:'#D1D1D1',
+        BtnBg:'#FFC122',
+        lightGray:'#F7F8F9',
+        lightBlack:'#333435',
+        font:'#CAC9D1',
+        gray: '#23252A',
+        contactBg:'#3E4045',
+      },
+      borderRadius: {
+        '100': '100px',
+        '80':'80px',
+        '30':'30px',
+        '40':'40px',
+        '24':'24px',
+        '20':'20px',
+        '120':'10px',
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(0deg, #0A0D14, #0A0D14),linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1))',
+        'bg-line': "url('/assets/img/banner.png')",
+        'bg-blur': "url('/assets/img/homePage/blur.svg')",
+        'bg-blur1': "url('/assets/img/homePage/CTA/blur-1.svg')",
+        'bg-blur2': "url('/assets/img/homePage/CTA/blur-2.svg')",
+      },
+    },
+  },
+  plugins: [
+    
+  ],
+}
